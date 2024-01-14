@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>VOGUE VIEW</title>
+    <style>
+        /* Add your additional styling here if needed */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-nav ul li {
+            margin: 0 1rem;
+        }
+
+        .sub-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub-nav ul li {
+            margin: 0 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .medium-image {
+            position: relative;
+            width: 48%;
+            margin-bottom: 2rem;
+        }
+
+        .medium-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-details {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .medium-image:hover .image-details {
+            opacity: 1;
+        }
+
+        .image-details h3,
+        .image-details p {
+            color: #fff;
+            margin: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .medium-image:hover .button {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="index.html" class="logo">VOGUE VIEW.</a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="secpage.html">POSES</a></li>
+                <li><a href="work.html">LOGIN</a></li>
+            </ul>
+        </div>
+        <div class="sub-nav">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-google"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="medium-image">
+                <a href="gym.html">
+                    <img src="img2/gym.jpeg" alt="First Image">
+                </a>
+                <div class="image-details">
+                    <h3 class="heading-tertiary"></h3>
+                    <a href="gym.html" class="button">Explore Gym Poses</a>
+                </div>
+            </div>
+
+            <div class="medium-image">
+                <a href="yoga.html">
+                    <img src="img2/WhatsApp Image 2024-01-12 at 16.01.37.jpeg" alt="Second Image">
+                </a>
+                <div class="image-details">
+                    <h3 class="heading-tertiary"></h3>
+                    <a href="yoga.html" class="button">Discover Yoga Poses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
